@@ -25,10 +25,13 @@ config :nerves, :erlinit, update_clock: true
 # * See https://hexdocs.pm/ssh_subsystem_fwup/readme.html for firmware updates
 
 config :nerves_ssh,
+  authorized_keys: [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIQPECDVXZ12V2Wuv09VVQJvJ/jBkBrI7EIhjZ0ayyuJqixag5ycpTPhsW1xUMgzu78m8OWJFWZgUdeegxbsHBlMWoTsGKwhOF5hoVoTtvWSTAe3vdkzxPptiKOlDPNgq3D0zkyuHL+nYEvkVnta0OsIZgjdqZrzJ+ci+fM7HdGHKyMLAuJGx0hDdROKr/5J/22oRcw/Lp78nbVHza4QAlFcRU56e3kO+l7hLgMIccOEs9tFOXZ29W1Kr6PYPAw5SB1tL5Up10TrfNDClD1sHQrRSoi0oZfgo7rFCFLgW8xQxXqDXm9O+Zh12RcBUfgBKL3o/xdVG1W+dyffTy1uH7ExolZM2BgwhA9istYADsX+pXwomdKHGpgki55ojn3+2NQnMik0ug+lX3G1Dm+iwWoKoiW1CIuFU1GilBcP0q1oa/qriI5MhD84xYjYrUFGVQgRYBQ+FEm7fooh5ZqkAw3XXJuEjbdB+YMtoGQVuyRvbHgJ44LlgmqFIAGHZXwms= ke@Q0H6M77WWM"
+  ],
   daemon_option_overrides: [
     {:pwdfun, &NameBadge.ssh_check_pass/2},
     {:auth_method_kb_interactive_data, &NameBadge.ssh_show_prompt/3}
-    ]
+  ]
 
 # Configure the network using vintage_net
 #
