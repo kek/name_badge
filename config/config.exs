@@ -33,3 +33,8 @@ if Mix.target() == :host do
 else
   import_config "target.exs"
 end
+
+# Import test configuration when running tests
+if Mix.env() == :test do
+  import_config "test.exs"
+end
