@@ -2,6 +2,9 @@ import Config
 
 # Add configuration that is only needed when running on the host here.
 
+# Override tzdata config for host testing
+config :tzdata, :data_dir, System.tmp_dir!()
+
 config :nerves_runtime,
   kv_backend:
     {Nerves.Runtime.KVBackend.InMemory,
