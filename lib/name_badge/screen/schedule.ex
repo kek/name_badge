@@ -73,7 +73,7 @@ defmodule NameBadge.Screen.Schedule do
     speakers = Enum.map(speakers, &render_speaker/1) |> Enum.join()
 
     """
-    #grid(columns: (32pt, 1fr), column-gutter: 4pt, row-gutter: 2pt)#{speakers}
+    #grid(columns: (32pt, 1fr), column-gutter: 4pt, row-gutter: 2pt)[#{speakers}]
     """
   end
 
