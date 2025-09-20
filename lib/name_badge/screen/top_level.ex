@@ -4,11 +4,10 @@ defmodule NameBadge.Screen.TopLevel do
   require Logger
 
   @screens [
-    {"Settings", NameBadge.Screen.Settings},
-    {"Flappy Bird", NameBadge.Screen.FlappyBird},
     {"Name Badge", NameBadge.Screen.NameBadge},
-    {"Gallery", NameBadge.Screen.Gallery}
+    {"Gallery", NameBadge.Screen.Gallery},
     # {"Schedule", NameBadge.Screen.Schedule},
+    {"Settings", NameBadge.Screen.Settings}
   ]
 
   def render(assigns) do
