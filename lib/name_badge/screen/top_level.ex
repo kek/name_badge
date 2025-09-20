@@ -4,8 +4,8 @@ defmodule NameBadge.Screen.TopLevel do
   require Logger
 
   @screens [
-    {"Name Badge", NameBadge.Screen.NameBadge},
-    {"Gallery", NameBadge.Screen.Gallery},
+    # {"Name Badge", NameBadge.Screen.NameBadge},
+    # {"Gallery", NameBadge.Screen.Gallery},
     # {"Schedule", NameBadge.Screen.Schedule},
     {"Settings", NameBadge.Screen.Settings}
   ]
