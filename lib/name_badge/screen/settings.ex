@@ -138,7 +138,7 @@ defmodule NameBadge.Screen.Settings do
           |> assign(:connected, true)
           |> assign(:qr_code, encode(qr_code_svg))
           |> assign(:token, token)
-          |> assign(:show_stats, false)
+          |> assign(:show_stats, true)
           |> assign(:sudo_mode, false)
 
         true ->
