@@ -7,8 +7,15 @@ defmodule NameBadge.Screen.TopLevel do
     # {"Name Badge", NameBadge.Screen.NameBadge},
     # {"Gallery", NameBadge.Screen.Gallery},
     # {"Schedule", NameBadge.Screen.Schedule},
+    {"Weather", NameBadge.Screen.Weather},
     {"Settings", NameBadge.Screen.Settings}
   ]
+
+  def render(%{current_screen_name: "Weather"}) do
+    """
+    #place(center + horizon, text(size: 32pt, font: "Silkscreen", tracking: -8pt, "Weather is great!"))
+    """
+  end
 
   def render(assigns) do
     """

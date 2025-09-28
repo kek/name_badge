@@ -39,7 +39,7 @@ defmodule NameBadge.Application do
         NameBadge.Display,
         NameBadge.Socket,
         NameBadge.Battery,
-        NameBadge.ScheduleUpdater,
+        # NameBadge.ScheduleUpdater,
         {NameBadge.Renderer, button_a: "BTN_1", button_b: "BTN_2"},
         {Task,
          fn ->
