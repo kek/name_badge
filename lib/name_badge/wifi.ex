@@ -24,6 +24,7 @@ if Mix.target() != :host do
           Logger.warning("NameBadge.Wifi error: no supported wifi modules found")
       end
 
+      pull_down(state)
       {:ok, state, :timer.minutes(2)}
     end
 
